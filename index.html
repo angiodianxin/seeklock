@@ -127,11 +127,13 @@
         const day = dayjs.duration({ days: 1 }).valueOf();
 
         let offset;
-        const rawOffset = Cookies.get('offset');
+        const rawOffset = Number(Cookies.get("offset"));
         if (rawOffset) {
             offset = dayjs.duration(rawOffset);
+            console.debug(offset);
         } else {
             offset = dayjs.duration(0);
+            console.debug(offset);
         }
 
         const DOM_hour = document.getElementById("clock-hour");
