@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROTA Clock</title>
+    <style>
+        .clock {
+            display: grid;
+            grid-template-rows: 1rem 4rem 1rem;
+            grid-template-columns: 6rem 2rem 6rem;
+            background-color: #000000AF;
+            width: fit-content;
+            backdrop-filter: blur(3px);
+            padding: 1rem;
+        }
+
+        .clock-text {
+            font-size: 5rem;
+            text-align: center;
+            font-family: "Share Tech Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: #FFFFFF;
+            line-height: 6rem;
+            vertical-align: middle;
+            padding-top: .23rem;
+        }
+
+
+        #clock-hour-up {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        #clock-hour-down {
+            grid-row: 3;
+            grid-column: 1;
+        }
+
+        #clock-minute-up {
+            grid-row: 1;
+            grid-column: 3;
+        }
+
+        #clock-minute-down {
+            grid-row: 3;
+            grid-column: 3;
+        }
+
+        #clock-hour {
+            grid-row: 1 / 4;
+            grid-column: 1;
+        }
+
+        #clock-colon {
+            grid-row: 1 / 4;
+            grid-column: 1 / 4;
+            margin-top: -.46rem;
+        }
+
+        #clock-minute {
+            grid-row: 1 / 4;
+            grid-column: 3;
+        }
+
+        .clock-button {
+            position: relative;
+            padding: 0;
+            border: none;
+            outline: none;
+            font: inherit;
+            color: inherit;
+            background: none;
+        }
+
+        .clock-button:hover::after {
+            background-color: #FFFFFF;
+
+        }
+
+        .clock-button::after {
+            position: absolute;
+            content: "";
+            top: 30%;
+            bottom: 30%;
+            left: 10%;
+            right: 10%;
+        }
+
+        .clock-button-up::after {
+            clip-path: polygon(0 100%, 100% 100%, 50% 0);
+        }
+
+        .clock-button-down::after {
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h2>しぃくろっく</h2>
+    <div class="clock">
+        <button id="clock-hour-up" class="clock-button clock-button-up"></button>
+        <div id="clock-hour" class="clock-text"></div>
+        <button id="clock-hour-down" class="clock-button clock-button-down"></button>
+        <div id="clock-colon" class="clock-text"></div>
+        <button id="clock-minute-up" class="clock-button clock-button-up"></button>
+        <div id="clock-minute" class="clock-text"></div>
+        <button id="clock-minute-down" class="clock-button clock-button-down"></button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script>
+        dayjs.extend(window.dayjs_plugin_timezone);
+        dayjs.extend(window.dayjs_plugin_duration);
+        dayjs.tz.setDefault("Asia/Tokyo");
+
+        const TIME_RATIO = 48;
+        const day = dayjs.duration({ days: 1 }).valueOf();
+
+        let offset;
+        const rawOffset = Cookies.get('offset');
+        if (rawOffset) {
+            offset = dayjs.duration(rawOffset);
+        } else {
+            offset = dayjs.duration(0);
+        }
+
+        const DOM_hour = document.getElementById("clock-hour");
+        const DOM_colon = document.getElementById("clock-colon");
+        const DOM_minute = document.getElementById("clock-minute");
+
+        document.getElementById("clock-hour-up").addEventListener("click", function (e) {
+            offset = offset.add({ hours: 1 });
+            Cookies.set("offset", offset.valueOf(), { expires: 365 })
+        });
+        document.getElementById("clock-hour-down").addEventListener("click", function (e) {
+            offset = offset.subtract({ hours: 1 });
+            Cookies.set("offset", offset.valueOf(), { expires: 365 })
+        });
+        document.getElementById("clock-minute-up").addEventListener("click", function (e) {
+            offset = offset.add({ minutes: 10 });
+            Cookies.set("offset", offset.valueOf(), { expires: 365 })
+        });
+        document.getElementById("clock-minute-down").addEventListener("click", function (e) {
+            offset = offset.subtract({ minutes: 10 });
+            Cookies.set("offset", offset.valueOf(), { expires: 365 })
+        });
+
+        requestAnimationFrame(function refresh() {
+            const realDate = dayjs();
+            const rotaDate = dayjs((realDate * TIME_RATIO) % day).add(offset);  // dayjsコンストラクタの入力範囲が保証されていないので念のため日単位で切り出してから
+            DOM_hour.textContent = rotaDate.format("HH");
+            DOM_minute.textContent = rotaDate.format("mm");
+            if (rotaDate.second() < 30) {
+                DOM_colon.textContent = ":";
+            } else {
+                DOM_colon.textContent = " ";
+            }
+
+            requestAnimationFrame(refresh);
+        })
+
+    </script>
+</body>
+
+</html>
