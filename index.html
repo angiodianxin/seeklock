@@ -642,7 +642,7 @@
 
         let last_refreshed_rota = dayjs.utc(0)
         let last_refreshed_real = dayjs(0)
-        let offset = dayjs.duration(Cookies.get("offset") ?? 63000000);
+        let offset = dayjs.duration(Number(Cookies.get("offset")) ?? 63000000);
 
         const DOM_season = document.getElementById("clock-season");
         const DOM_day = document.getElementById("clock-day");
