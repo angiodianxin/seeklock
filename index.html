@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROTA Clock</title>
-    <link rel="stylesheet" href="./clock.css">
+    <link rel="stylesheet" href="./clock.css?20241125">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -40,580 +40,68 @@
             <button id="clock-minute-down" class="clock-button clock-button-down"></button>
         </div>
         <div class="periods">
-            <div class="period season-spring period-daytime">
+            <div id="period-spring-daytime" class="period season-spring period-daytime">
                 <div class="weather weather-sunny">
                     <h3>昼: 晴</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イエローチューリップ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ナチュラルスイセン</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">オオムラサキ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">カバマダラ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">シオカラトンボ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">リュウテンサザエ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">サルボウガイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イボウミニナ</figcaption>
-                    </div>
                 </div>
                 <div class="weather weather-rainy">
                     <h3>昼: 雨</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ピンクチューリップ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ピュアスイセン</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">カバマダラ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">シオカラトンボ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">チェイサートンボ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イソハマグリ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">リュウテンサザエ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">サルボウガイ</figcaption>
-                    </div>
                 </div>
             </div>
-            <div class="period season-spring period-night">
+            <div id="period-spring-night" class="period season-spring period-night">
                 <div class="weather weather-sunny">
                     <h3>夜: 晴</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">オレンジヒオウギ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ピュアナイトフロックス</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">オオムラサキ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ホソナガヤママユ・オス</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ホソナガヤママユ・メス</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">アオヤギ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イボウミニナ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ツメタガイ</figcaption>
-                    </div>
                 </div>
                 <div class="weather weather-rainy">
                     <h3>夜: 雨</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">レッドヒオウギ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ナチュラルナイトフロックス</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">チェイサートンボ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ホソナガヤママユ・オス</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ホソナガヤママユ・メス</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イソハマグリ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">アオヤギ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ツメタガイ</figcaption>
-                    </div>
                 </div>
             </div>
-            <div class="period season-summer period-daytime">
+            <div id="period-summer-daytime" class="period season-summer period-daytime">
                 <div class="weather weather-sunny">
                     <h3>昼: 晴</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">エレガントアイリス</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ブライトヒマワリ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">オオルリアゲハ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">キチョウ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ギンヤンマ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">シロナルトボラ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">アヤハマグリ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イシマキガイ</figcaption>
-                    </div>
                 </div>
                 <div class="weather weather-rainy">
                     <h3>昼: 雨</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">クワイエットアイリス</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ディープヒマワリ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">キチョウ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ギンヤンマ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ハロウィーンペナントトンボ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">エゾアワビ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">シロナルトボラ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">アヤハマグリ</figcaption>
-                    </div>
                 </div>
             </div>
-            <div class="period season-summer period-night">
+            <div id="period-summer-night" class="period season-summer period-night">
                 <div class="weather weather-sunny">
                     <h3>夜: 晴</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ライトツキミソウ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ダークナイトオウル</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">オオルリアゲハ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ヨシカレハ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">セクロピアサン</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">フクトコブシ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ゾウゲバイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イシマキガイ</figcaption>
-                    </div>
                 </div>
                 <div class="weather weather-rainy">
                     <h3>夜: 雨</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ダークツキミソウ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ライトナイトオウル</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ハロウィーンペナントトンボ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ヨシカレハ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">セクロピアサン</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">エゾアワビ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">フクトコブシ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ゾウゲバイ</figcaption>
-                    </div>
                 </div>
             </div>
-            <div class="period season-autumn period-daytime">
+            <div id="period-autumn-daytime" class="period season-autumn period-daytime">
                 <div class="weather weather-sunny">
                     <h3>昼: 晴</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イエローキバナコスモス</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">エレガントシャガアイリス</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ヨーロッパアカタテハ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">コレルリマダラ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">アキアカネ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イガイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">サメムシロガイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">チョウセンキサゴ</figcaption>
-                    </div>
                 </div>
                 <div class="weather weather-rainy">
                     <h3>昼: 雨</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">オレンジキバナコスモス</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">クワイエットシャガアイリス</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">コレルリマダラ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">アキアカネ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">アオハダトンボ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イガイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">サメムシロガイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イボタマキビ</figcaption>
-                    </div>
                 </div>
             </div>
-            <div class="period season-autumn period-night">
+            <div id="period-autumn-night" class="period season-autumn period-night">
                 <div class="weather weather-sunny">
                     <h3>夜: 晴</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ピュアチューベローズ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ライトオウバイ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ヨーロッパアカタテハ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">プロメテアヤママユ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">モモイロヤママユ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">マナマコ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">マガキ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">チョウセンキサゴ</figcaption>
-                    </div>
                 </div>
                 <div class="weather weather-rainy">
                     <h3>夜: 雨</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ナチュラルチューベローズ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ダークオウバイ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">アオハダトンボ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">プロメテアヤママユ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">モモイロヤママユ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">マナマコ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">マガキ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">イボタマキビ</figcaption>
-                    </div>
                 </div>
             </div>
-            <div class="period season-winter period-daytime">
+            <div id="period-winter-daytime" class="period season-winter period-daytime">
                 <div class="weather weather-sunny">
                     <h3>昼: 晴</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ナチュラルスノードロップ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">エレガントシオン</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ルリオビアゲハ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">モンシロチョウ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ニーダムのスキマー</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">タイラギ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ヒオウギガイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">キタムラサキウニ</figcaption>
-                    </div>
                 </div>
                 <div class="weather weather-rainy">
                     <h3>昼: 雨</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ピュアスノードロップ</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">クワイエットシオン</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">モンシロチョウ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ニーダムのスキマー</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ネキトンボ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">キヒトデ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ヒオウギガイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">シライトマキバイ</figcaption>
-                    </div>
                 </div>
             </div>
-            <div class="period season-winter period-night">
+            <div id="period-winter-night" class="period season-winter period-night">
                 <div class="weather weather-sunny">
                     <h3>夜: 晴</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">エレガントサフラン</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ナチュラルハナシュクシャ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ルリオビアゲハ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">フユシャク</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">コガタツバメエダシャク</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">タイラギ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">キタムラサキウニ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">エゾタマキガイ</figcaption>
-                    </div>
                 </div>
                 <div class="weather weather-rainy">
                     <h3>夜: 雨</h3>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">クワイエットサフラン</figcaption>
-                    </div>
-                    <div class="item item-flower">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ピュアハナシュクシャ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">ネキトンボ</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">フユシャク</figcaption>
-                    </div>
-                    <div class="item item-insect">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">コガタツバメエダシャク</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">キヒトデ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">シライトマキバイ</figcaption>
-                    </div>
-                    <div class="item item-shell">
-                        <img class="item-image" src="">
-                        <figcaption class="itemlabel">エゾタマキガイ</figcaption>
-                    </div>
                 </div>
             </div>
         </div>
@@ -637,11 +125,100 @@
         const DAYTIME_START = dayjs.utc(0).hour(6);
         const DAYTIME_END = dayjs.utc(0).hour(19);
 
+        const flowers = [
+            ["season-spring", "period-daytime", "weather-sunny", "イエローチューリップ"],
+            ["season-spring", "period-daytime", "weather-rainy", "ピンクチューリップ"],
+            ["season-spring", "period-daytime", "weather-sunny", "ナチュラルスイセン"],
+            ["season-spring", "period-daytime", "weather-rainy", "ピュアスイセン"],
+            ["season-summer", "period-daytime", "weather-sunny", "エレガントアイリス"],
+            ["season-summer", "period-daytime", "weather-rainy", "クワイエットアイリス"],
+            ["season-summer", "period-daytime", "weather-sunny", "ブライトヒマワリ"],
+            ["season-summer", "period-daytime", "weather-rainy", "ディープヒマワリ"],
+            ["season-autumn", "period-daytime", "weather-sunny", "イエローキバナコスモス"],
+            ["season-autumn", "period-daytime", "weather-rainy", "オレンジキバナコスモス"],
+            ["season-autumn", "period-daytime", "weather-sunny", "エレガントシャガアイリス"],
+            ["season-autumn", "period-daytime", "weather-rainy", "クワイエットシャガアイリス"],
+            ["season-winter", "period-daytime", "weather-sunny", "ナチュラルスノードロップ"],
+            ["season-winter", "period-daytime", "weather-rainy", "ピュアスノードロップ"],
+            ["season-winter", "period-daytime", "weather-sunny", "エレガントシオン"],
+            ["season-winter", "period-daytime", "weather-rainy", "クワイエットシオン"],
+            ["season-summer", "period-night", "weather-sunny", "ライトツキミソウ"],
+            ["season-summer", "period-night", "weather-rainy", "ダークツキミソウ"],
+            ["season-spring", "period-night", "weather-sunny", "オレンジヒオウギ"],
+            ["season-spring", "period-night", "weather-rainy", "レッドヒオウギ"],
+            ["season-summer", "period-night", "weather-sunny", "ダークナイトオウル"],
+            ["season-summer", "period-night", "weather-rainy", "ライトナイトオウル"],
+            ["season-spring", "period-night", "weather-sunny", "ピュアナイトフロックス"],
+            ["season-spring", "period-night", "weather-rainy", "ナチュラルナイトフロックス"],
+            ["season-winter", "period-night", "weather-sunny", "エレガントサフラン"],
+            ["season-winter", "period-night", "weather-rainy", "クワイエットサフラン"],
+            ["season-autumn", "period-night", "weather-sunny", "ピュアチューベローズ"],
+            ["season-autumn", "period-night", "weather-rainy", "ナチュラルチューベローズ"],
+            ["season-autumn", "period-night", "weather-sunny", "ライトオウバイ"],
+            ["season-autumn", "period-night", "weather-rainy", "ダークオウバイ"],
+            ["season-winter", "period-night", "weather-sunny", "ナチュラルハナシュクシャ"],
+            ["season-winter", "period-night", "weather-rainy", "ピュアハナシュクシャ"],
+        ];
+
+        const insects = [
+            ["season-spring", "period", "weather-sunny", "オオムラサキ"],
+            ["season-spring", "period-daytime", "weather", "カバマダラ"],
+            ["season-summer", "period", "weather-sunny", "オオルリアゲハ"],
+            ["season-summer", "period-daytime", "weather", "キチョウ"],
+            ["season-autumn", "period", "weather-sunny", "ヨーロッパアカタテハ"],
+            ["season-autumn", "period-daytime", "weather", "コレルリマダラ"],
+            ["season-winter", "period", "weather-sunny", "ルリオビアゲハ"],
+            ["season-winter", "period-daytime", "weather", "モンシロチョウ"],
+            ["season-spring", "period-daytime", "weather", "シオカラトンボ"],
+            ["season-spring", "period", "weather-rainy", "チェイサートンボ"],
+            ["season-summer", "period-daytime", "weather", "ギンヤンマ"],
+            ["season-summer", "period", "weather-rainy", "ハロウィーンペナントトンボ"],
+            ["season-autumn", "period-daytime", "weather", "アキアカネ"],
+            ["season-autumn", "period", "weather-rainy", "アオハダトンボ"],
+            ["season-winter", "period-daytime", "weather", "ニーダムのスキマー"],
+            ["season-winter", "period", "weather-rainy", "ネキトンボ"],
+            ["season-spring", "period-night", "weather", "ホソナガヤママユ・オス"],
+            ["season-spring", "period-night", "weather", "ホソナガヤママユ・メス"],
+            ["season-summer", "period-night", "weather", "ヨシカレハ"],
+            ["season-summer", "period-night", "weather", "セクロピアサン"],
+            ["season-autumn", "period-night", "weather", "プロメテアヤママユ"],
+            ["season-autumn", "period-night", "weather", "モモイロヤママユ"],
+            ["season-winter", "period-night", "weather", "フユシャク"],
+            ["season-winter", "period-night", "weather", "コガタツバメエダシャク"],
+        ];
+
+        const shells = [
+            ["season-winter", "period-night", "weather", "キヒトデ"],
+            ["season-winter", "period-daytime", "weather", "タイラギ"],
+            ["season-winter", "period-daytime", "weather", "ヒオウギガイ"],
+            ["season-autumn", "period-daytime", "weather", "イガイ"],
+            ["season-autumn", "period-night", "weather", "マナマコ"],
+            ["season-winter", "period", "weather-sunny", "キタムラサキウニ"],
+            ["season-winter", "period", "weather-rainy", "シライトマキバイ"],
+            ["season-summer", "period", "weather-rainy", "エゾアワビ"],
+            ["season-summer", "period-daytime", "weather", "シロナルトボラ"],
+            ["season-summer", "period-night", "weather", "フクトコブシ"],
+            ["season-winter", "period-night", "weather", "エゾタマキガイ"],
+            ["season-spring", "period", "weather-rainy", "イソハマグリ"],
+            ["season-spring", "period-daytime", "weather", "リュウテンサザエ"],
+            ["season-summer", "period-night", "weather", "ゾウゲバイ"],
+            ["season-autumn", "period-night", "weather", "マガキ"],
+            ["season-summer", "period-daytime", "weather", "アヤハマグリ"],
+            ["season-spring", "period-night", "weather", "アオヤギ"],
+            ["season-spring", "period-daytime", "weather", "サルボウガイ"],
+            ["season-spring", "period", "weather-sunny", "イボウミニナ"],
+            ["season-spring", "period-night", "weather", "ツメタガイ"],
+            ["season-autumn", "period-daytime", "weather", "サメムシロガイ"],
+            ["season-autumn", "period", "weather-sunny", "チョウセンキサゴ"],
+            ["season-autumn", "period", "weather-rainy", "イボタマキビ"],
+            ["season-summer", "period", "weather-sunny", "イシマキガイ"],
+        ];
+
         const client_id = Cookies.get("client-id") ?? crypto.randomUUID();
         Cookies.set("client-id", client_id, { expires: 365 });
 
-        let last_refreshed_rota = dayjs.utc(0)
-        let last_refreshed_real = dayjs(0)
+        let last_refreshed_rota = dayjs.utc(0);
+        let last_refreshed_real = dayjs(0);
         let offset = dayjs.duration(Number(Cookies.get("offset") ?? 63000000));
 
         const DOM_season = document.getElementById("clock-season");
@@ -649,24 +226,6 @@
         const DOM_hour = document.getElementById("clock-hour");
         const DOM_colon = document.getElementById("clock-colon");
         const DOM_minute = document.getElementById("clock-minute");
-        const DOMs_periods = {
-            spring: {
-                daytime: document.querySelectorAll(".season-spring.period-daytime"),
-                night: document.querySelectorAll(".season-spring.period-night")
-            },
-            summer: {
-                daytime: document.querySelectorAll(".season-summer.period-daytime"),
-                night: document.querySelectorAll(".season-summer.period-night")
-            },
-            autumn: {
-                daytime: document.querySelectorAll(".season-autumn.period-daytime"),
-                night: document.querySelectorAll(".season-autumn.period-night")
-            },
-            winter: {
-                daytime: document.querySelectorAll(".season-winter.period-daytime"),
-                night: document.querySelectorAll(".season-winter.period-night")
-            }
-        };
 
         document.getElementById("clock-hour-up").addEventListener("click", function (e) {
             offset_add({ hours: 1 });
@@ -698,11 +257,10 @@
         }
 
         function refresh_clock(rotaDate) {
-            DOM_day.textContent = "day" + rotaDate.dayOfYear()
+            DOM_day.textContent = "day" + rotaDate.dayOfYear();
             DOM_hour.textContent = rotaDate.format("HH");
             DOM_minute.textContent = rotaDate.format("mm");
         }
-
 
         function refresh_period(realFromSunday, rotaDate) {
             Array.from(document.getElementsByClassName("period-now")).forEach((element) => {
@@ -710,36 +268,63 @@
                 element.classList.remove("period-now");
                 setTimeout(() => {
                     element.classList.remove("period-previous");
-                }, 2000)
+                }, 2000);
             });
 
-            let DOMs_period;
+
+            let season;
             switch (realFromSunday.date()) {
                 case 7: // 土曜
                 case 1: // 日曜
                     DOM_season.textContent = "冬";
-                    DOMs_period = DOMs_periods.winter
+                    season = "winter";
                     break;
                 case 2: // 月曜
                 case 3: // 火曜
                     DOM_season.textContent = "春";
-                    DOMs_period = DOMs_periods.spring
+                    season = "spring";
                     break;
                 case 4: // 水曜
                 case 5: // 木曜
                     DOM_season.textContent = "夏";
-                    DOMs_period = DOMs_periods.summer
+                    season = "summer";
                     break;
                 case 6: // 金曜
                     DOM_season.textContent = "秋";
-                    DOMs_period = DOMs_periods.autumn
+                    season = "autumn";
                     break;
                 default:
                     throw new Error("Something went wrong");
             }
-            const DOM_period = is_daytime(rotaDate) ? DOMs_period.daytime : DOMs_period.night
-            DOM_period.forEach((element) => {
-                element.classList.add("period-now");
+
+            const period = is_daytime(rotaDate) ? "daytime" : "night";
+            const DOM_period = document.getElementById(`period-${season}-${period}`);
+            DOM_period.classList.add("period-now");
+        }
+
+        function create_itemDOM(cls, imgindex, name) {
+            const DOM_item = document.createElement("div");
+            DOM_item.classList.add("item", cls);
+
+            const DOM_image = document.createElement("div");
+            DOM_image.classList.add("item-image");
+            DOM_image.style.backgroundPositionX = `-${imgindex * 100}%`;
+
+            const DOM_label = document.createElement("div");
+            DOM_label.classList.add("itemlabel");
+            DOM_label.textContent = name;
+
+            DOM_item.appendChild(DOM_image);
+            DOM_item.appendChild(DOM_label);
+            return DOM_item;
+        }
+
+        function put_items(cls, items) {
+            items.forEach(([season, period, weather, name], i) => {
+                document.querySelectorAll(`.${season}.${period} .${weather}`).forEach((DOM_weather) => {
+                    const DOM_item = create_itemDOM(cls, i, name);
+                    DOM_weather.appendChild(DOM_item);
+                });
             });
         }
 
@@ -752,7 +337,7 @@
                 !realDate.isSame(last_refreshed_real, "day")
                 || (is_daytime(rotaDate) != is_daytime(last_refreshed_rota))
             ) {
-                last_refreshed_real = realDate
+                last_refreshed_real = realDate;
                 refresh_period(realFromSunday, rotaDate);
             }
 
@@ -763,6 +348,9 @@
 
             requestAnimationFrame(loop);
         }
+        put_items("item-flower", flowers);
+        put_items("item-insect", insects);
+        put_items("item-shell", shells);
         loop();
     </script>
 </body>

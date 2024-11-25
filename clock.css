@@ -164,14 +164,23 @@ h1 {
 	text-align: center;
 }
 .item-image {
-	display: none;
-	width: 5rem;
-	height: 5rem;
-}
-.itemlabel {
+	display: block;
+	width: 3rem;
 	height: 3rem;
+	background-size: cover;
+	margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
+
+.item-flower .item-image {
+	background-image: url(sprite_flowers.png);
+}
+.item-insect .item-image {
+	background-image: url(sprite_insects.png);
+}
+.item-shell .item-image {
+	background-image: url(sprite_shells.png);
+}
+@media screen and (min-width: 940px) {
 	.period {
 		grid-template-columns: 1fr 1fr;
 	}
